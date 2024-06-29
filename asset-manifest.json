@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-workout-timer/static/css/main.a1b13577.css",
+    "main.js": "/React-workout-timer/static/js/main.c45f8511.js",
+    "static/js/453.e20f94b6.chunk.js": "/React-workout-timer/static/js/453.e20f94b6.chunk.js",
+    "index.html": "/React-workout-timer/index.html",
+    "main.a1b13577.css.map": "/React-workout-timer/static/css/main.a1b13577.css.map",
+    "main.c45f8511.js.map": "/React-workout-timer/static/js/main.c45f8511.js.map",
+    "453.e20f94b6.chunk.js.map": "/React-workout-timer/static/js/453.e20f94b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1b13577.css",
+    "static/js/main.c45f8511.js"
+  ]
+}

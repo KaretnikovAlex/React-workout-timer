@@ -1,6 +1,35 @@
 import './App.css';
 import { Workout } from './components/Workout';
 import { useState } from 'react';
+import styled from 'styled-components';
+
+const Section = styled.section`
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #6a887f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
+
+& h2 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+& ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+`
 
 const workouts = [
   {
@@ -20,10 +49,10 @@ const workouts = [
   },
 ];
 
-function App() { 
+function App() {
   const [completedWorkouts, setCompletedWorkouts] = useState([]);
 
-  function handleWorkoutComplete(workoutTitle) { 
+  function handleWorkoutComplete(workoutTitle) {
     setCompletedWorkouts((prevCompletedWorkouts) => [
       ...prevCompletedWorkouts,
       workoutTitle,
@@ -32,7 +61,7 @@ function App() {
 
   return (
     <main>
-      <section>
+      <Section>
         <h2>Choose a workout</h2>
         <ul>
           {workouts.map((workout) => (
@@ -44,16 +73,16 @@ function App() {
             </li>
           ))}
         </ul>
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <h2>Completed workouts</h2>
         <ul>
           {completedWorkouts.map((workoutTitle, index) => (
             <li key={index}>{workoutTitle}</li>
           ))}
         </ul>
-      </section>
+      </Section>
     </main>
   );
 }
